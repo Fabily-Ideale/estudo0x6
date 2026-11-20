@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo de serviços da Nome da Empresa: resumo das categorias atendidas, em até 160 caracteres.">
+  <title>Serviços | Nome da Empresa</title>
+  <link rel="canonical" href="https://www.example.com/servicos.html">
+  <meta name="theme-color" content="#0b0d12">
+  <link rel="icon" href="assets/images/favicon_32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/images/icone_192.png" type="image/png" sizes="192x192">
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/images/apple_touch_icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Nome da Empresa">
+  <meta property="og:title" content="Serviços | Nome da Empresa">
+  <meta property="og:description" content="Catálogo de serviços da Nome da Empresa: resumo das categorias atendidas, em até 160 caracteres.">
+  <meta property="og:url" content="https://www.example.com/servicos.html">
+  <meta property="og:image" content="https://www.example.com/assets/images/og_imagem.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logotipo da Nome da Empresa">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json" id="dados-estruturados-servicos">{"@context": "https://schema.org", "@type": "Service", "serviceType": "Ramo de Atuação", "provider": {"@id": "https://www.example.com/#empresa"}, "areaServed": [{"@type": "City", "name": "Sua Cidade"}], "url": "https://www.example.com/servicos.html"}</script>
+
+  <link rel="preload" href="assets/fonts/inter_latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/outfit_latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a href="#conteudo" class="link-pular">Pular para o conteúdo</a>
+
+  <header id="main-header">
+    <div class="container nav-container">
+      <a href="/" class="logo-link" id="nav-logo-link">
+        <img src="assets/images/logo.svg" alt="" class="logo-img" width="80" height="80" decoding="async">
+        <span class="logo-text">Nome da Empresa</span>
+      </a>
+
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-controls="nav-menu" aria-expanded="false">
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav aria-label="Principal">
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="/" class="nav-link" id="link-home">Home</a></li>
+        <li><a href="sobre.html" class="nav-link" id="link-sobre">Quem Somos</a></li>
+        <li><a href="servicos.html" class="nav-link" id="link-servicos">Serviços</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <section class="servicos-hero-sec" id="servicos-hero">
+      <div class="container">
+        <div class="section-header servicos-hero-header">
+          <span class="section-tag">Nosso Catálogo</span>
+          <h1 class="text-gradient-primary" id="servicos-main-title">Título do Catálogo de Serviços.</h1>
+          <p class="servicos-hero-desc">Apresente o catálogo da Nome da Empresa em uma ou duas frases: como os serviços estão organizados e o que o cliente encontra aqui.</p>
+        </div>
+
+        <div class="servicos-atendimento" id="servicos-atendimento">
+          <div class="servicos-atendimento-item" id="atendimento-duvidas" data-chat-bloco hidden>
+            <p><b>Dúvidas sobre valores ou serviços?</b> Converse com o nosso assistente pelo chat.</p>
+            <button type="button" class="btn btn-primary" id="abrir-chat-ia" data-abrir-chat hidden>Abrir o Chat</button>
+          </div>
+          <div class="servicos-atendimento-item" id="atendimento-fechamento">
+            <p><b>Quer contratar um serviço?</b> Entre em contato conosco pelo WhatsApp.</p>
+            <a href="https://wa.me/5500000000000" class="btn btn-secondary" id="atendimento-whatsapp" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp<span class="sr-only"> (abre em nova aba)</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p class="sr-only" id="servicos-status" role="status" aria-live="polite"></p>
+
+    <section class="servicos-cat-sec" id="consultoria" data-categoria="consultoria">
+      <div class="container">
+        <span class="section-tag">Pilar 01</span>
+        <h2 class="section-title text-gradient-accent" id="cat-consultoria-title">Consultoria</h2>
+        <p>Descrição curta da categoria e do tipo de serviço que ela reúne.</p>
+
+        <div class="servicos-grid" id="grid-consultoria-services">
+
+          <div class="service-detail-card" id="srv-consultoria-diagnostico">
+            <div class="service-card-header">
+              <span class="service-card-number">01</span>
+              <h3 class="service-card-title">Diagnóstico Inicial</h3>
+            </div>
+            <p class="service-card-desc">Descrição do serviço: o que está incluso, para quem é indicado e o resultado esperado.</p>
+          </div>
+
+          <div class="service-detail-card" id="srv-consultoria-planejamento">
+            <div class="service-card-header">
+              <span class="service-card-number">02</span>
+              <h3 class="service-card-title">Planejamento</h3>
+            </div>
+            <p class="service-card-desc">Descrição do serviço: o que está incluso, para quem é indicado e o resultado esperado.</p>
+          </div>
+
+          <div class="service-detail-card" id="srv-consultoria-acompanhamento">
+            <div class="service-card-header">
+              <span class="service-card-number">03</span>
+              <h3 class="service-card-title">Acompanhamento</h3>
+            </div>
+            <p class="service-card-desc">Descrição do serviço: o que está incluso, para quem é indicado e o resultado esperado.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="servicos-cat-sec" id="produtos" data-categoria="produtos">
+      <div class="container">
+        <span class="section-tag">Pilar 02</span>
+        <h2 class="section-title text-gradient-primary" id="cat-produtos-title">Produtos</h2>
+        <p>Descrição curta da categoria e do tipo de serviço que ela reúne.</p>
+
+        <div class="servicos-grid" id="grid-produtos-services">
+
+          <div class="service-detail-card" id="srv-produtos-basico">
+            <div class="service-card-header">
+              <span class="service-card-number">04</span>
+              <h3 class="service-card-title">Produto Básico</h3>
+            </div>
+            <p class="service-card-desc">Descrição do serviço: o que está incluso, para quem é indicado e o resultado esperado.</p>
+          </div>
+
+          <div class="service-detail-card" id="srv-produtos-intermediario">
+            <div class="service-card-header">
+              <span class="service-card-number">05</span>
+              <h3 class="service-card-title">Produto Intermediário</h3>
+            </div>
+            <p class="service-card-desc">Descrição do serviço: o que está incluso, para quem é indicado e o resultado esperado.</p>
+          </div>
+
+          <div class="service-detail-card" id="srv-produtos-premium">
+            <div class="service-card-header">
+              <span class="service-card-number">06</span>
+              <h3 class="service-card-title">Produto Premium</h3>
+            </div>
+            <p class="service-card-desc">Descrição do serviço: o que está incluso, para quem é indicado e o resultado esperado.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="servicos-cat-sec" id="suporte" data-categoria="suporte">
+      <div class="container">
+        <span class="section-tag">Pilar 03</span>
+        <h2 class="section-title text-gradient-accent" id="cat-suporte-title">Suporte</h2>
+        <p>Descrição curta da categoria e do tipo de serviço que ela reúne.</p>
+
+        <div class="servicos-grid" id="grid-suporte-services">
+
+          <div class="service-detail-card" id="srv-suporte-remoto">
+            <div class="service-card-header">
+              <span class="service-card-number">07</span>
+              <h3 class="service-card-title">Suporte Remoto</h3>
+            </div>
+            <p class="service-card-desc">Descrição do serviço: o que está incluso, para quem é indicado e o resultado esperado.</p>
+          </div>
+
+          <div class="service-detail-card" id="srv-suporte-presencial">
+            <div class="service-card-header">
+              <span class="service-card-number">08</span>
+              <h3 class="service-card-title">Suporte Presencial</h3>
+            </div>
+            <p class="service-card-desc">Descrição do serviço: o que está incluso, para quem é indicado e o resultado esperado.</p>
+          </div>
+
+          <div class="service-detail-card" id="srv-suporte-manutencao">
+            <div class="service-card-header">
+              <span class="service-card-number">09</span>
+              <h3 class="service-card-title">Manutenção Preventiva</h3>
+            </div>
+            <p class="service-card-desc">Descrição do serviço: o que está incluso, para quem é indicado e o resultado esperado.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <a href="https://wa.me/5500000000000" class="whatsapp-float" id="whatsapp-floating-action" aria-label="Entrar em contato pelo WhatsApp (abre em nova aba)" target="_blank" rel="noopener noreferrer">
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+      <path d="M12.01 2.01c-5.52 0-10 4.48-10 10 0 1.77.46 3.42 1.27 4.88L2 22l5.3-1.27c1.4.77 3 1.21 4.7 1.21 5.52 0 10-4.48 10-10 0-5.52-4.47-10-9.99-10zm5.18 14.18c-.28.77-1.4 1.4-1.96 1.4-.56 0-1.12-.28-3.36-1.21-2.8-1.21-4.62-4.06-4.76-4.25-.14-.19-1.12-1.48-1.12-2.83a2.9 2.9 0 0 1 .93-2.16c.28-.28.56-.42.84-.42.14 0 .28 0 .42.06.14.06.28.14.42.42.28.7 1.12 2.76 1.21 2.9.09.19.09.37 0 .56-.09.19-.28.37-.42.56-.14.14-.28.32-.14.56.56 1.03 1.26 1.87 2.06 2.48.8.61 1.63.93 2.29.93.37 0 .65-.19.84-.37.28-.28.84-.93.93-1.21.09-.28.28-.37.47-.28.23.09 1.49.7 1.77.84.28.14.47.28.56.42.09.14.09.7-.19 1.48z"/>
+    </svg>
+  </a>
+
+  <footer id="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand" id="footer-brand-container">
+        <a href="/" class="logo-link mb-8">
+          <img src="assets/images/logo.svg" alt="" class="logo-img" width="80" height="80" loading="lazy" decoding="async">
+          <span class="logo-text">Nome da Empresa</span>
+        </a>
+        <p class="footer-desc">Frase curta sobre a empresa e a região de atendimento: Sua Cidade e região.</p>
+      </div>
+
+      <nav class="footer-nav" id="footer-nav-container" aria-label="Rodapé">
+        <p class="footer-nav-title">Navegação</p>
+        <ul class="footer-nav-links">
+          <li><a href="/" class="footer-nav-link" id="footer-link-home">Início</a></li>
+          <li><a href="sobre.html" class="footer-nav-link" id="footer-link-sobre">Quem Somos</a></li>
+          <li><a href="servicos.html" class="footer-nav-link" id="footer-link-servicos">Catálogo de Serviços</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="copyright" id="footer-copyright">&copy; <span id="ano-copyright">2026</span> Nome da Empresa. Todos os direitos reservados.</p>
+      <div class="footer-socials" id="footer-socials-container">
+        <a href="https://www.instagram.com/seu_perfil" target="_blank" rel="noopener noreferrer" class="social-link" id="social-link-instagram" aria-label="Seguir a Nome da Empresa no Instagram (abre em nova aba)">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+          </svg>
+        </a>
+        <a href="https://www.olx.com.br/perfil/seu_perfil" target="_blank" rel="noopener noreferrer" class="social-link" id="social-link-olx" aria-label="Perfil da Nome da Empresa na OLX (abre em nova aba)">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </a>
+        <a href="https://g.page/r/SEU_ID_GOOGLE/review" target="_blank" rel="noopener noreferrer" class="social-link" id="social-link-maps" aria-label="Avaliações no Google Maps (abre em nova aba)">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/core.js" defer></script>
+  <script src="js/chatwoot.js" defer></script>
+  <script src="js/categorias.js" defer></script>
+  <script src="js/servicos.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça a Nome da Empresa: história, missão, visão e valores. Descrição curta em até 160 caracteres.">
+  <title>Quem Somos | Nome da Empresa</title>
+  <link rel="canonical" href="https://www.example.com/sobre.html">
+  <meta name="theme-color" content="#0b0d12">
+  <link rel="icon" href="assets/images/favicon_32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/images/icone_192.png" type="image/png" sizes="192x192">
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/images/apple_touch_icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Nome da Empresa">
+  <meta property="og:title" content="Quem Somos | Nome da Empresa">
+  <meta property="og:description" content="Conheça a Nome da Empresa: história, missão, visão e valores. Descrição curta em até 160 caracteres.">
+  <meta property="og:url" content="https://www.example.com/sobre.html">
+  <meta property="og:image" content="https://www.example.com/assets/images/og_imagem.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logotipo da Nome da Empresa">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "AboutPage", "url": "https://www.example.com/sobre.html", "about": {"@id": "https://www.example.com/#empresa"}}</script>
+
+  <link rel="preload" href="assets/fonts/inter_latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/outfit_latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a href="#conteudo" class="link-pular">Pular para o conteúdo</a>
+
+  <header id="main-header">
+    <div class="container nav-container">
+      <a href="/" class="logo-link" id="nav-logo-link">
+        <img src="assets/images/logo.svg" alt="" class="logo-img" width="80" height="80" decoding="async">
+        <span class="logo-text">Nome da Empresa</span>
+      </a>
+
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-controls="nav-menu" aria-expanded="false">
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav aria-label="Principal">
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="/" class="nav-link" id="link-home">Home</a></li>
+        <li><a href="sobre.html" class="nav-link" id="link-sobre">Quem Somos</a></li>
+        <li><a href="servicos.html" class="nav-link" id="link-servicos">Serviços</a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <section class="sobre-hero-sec" id="sobre-hero">
+      <div class="container sobre-hero-grid">
+        <div class="sobre-hero-content">
+          <span class="section-tag">Nossa Trajetória</span>
+          <h1 class="text-gradient-primary" id="sobre-main-title">Título da seção sobre a trajetória.</h1>
+          <p class="sobre-lead">A <strong>Nome da Empresa</strong> (perfil <strong>@seu_perfil</strong>) foi fundada em ANO com o propósito de descrever aqui a razão de existir da empresa.</p>
+          <p class="mb-18">Conte o contexto: qual problema do mercado a empresa percebeu e como decidiu resolvê-lo.</p>
+          <p class="mb-24">Feche com o compromisso com o cliente: como a empresa trabalha e o resultado que entrega.</p>
+        </div>
+        <div class="sobre-image-wrapper" id="sobre-visual-container">
+          <div class="sobre-image-container">
+            <img src="assets/images/logo.svg" alt="Logotipo da Nome da Empresa" width="440" height="440" id="sobre-logo-visual" class="sobre-logo-img" fetchpriority="high">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="valores-sec" id="sobre-valores">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Diretrizes Fundamentais</span>
+          <h2 class="section-title text-gradient-accent" id="valores-section-title">Missão, Visão &amp; Valores</h2>
+          <p>Frase curta sobre a filosofia de trabalho da empresa.</p>
+        </div>
+
+        <div class="valores-grid" id="valores-cards-container">
+          
+          <div class="valor-card" id="valor-card-missao">
+            <div class="valor-icon">
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+              </svg>
+            </div>
+            <h3 class="valor-title">Missão</h3>
+            <p class="valor-desc">Descreva a missão da empresa: o que ela faz, para quem e com qual objetivo.</p>
+          </div>
+
+          <div class="valor-card" id="valor-card-visao">
+            <div class="valor-icon">
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+            <h3 class="valor-title">Visão</h3>
+            <p class="valor-desc">Descreva a visão da empresa: onde ela quer chegar a médio e longo prazo.</p>
+          </div>
+
+          <div class="valor-card" id="valor-card-integridade">
+            <div class="valor-icon">
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            <h3 class="valor-title">Valor Um</h3>
+            <p class="valor-desc">Descreva um valor inegociável da empresa e como ele aparece no dia a dia.</p>
+          </div>
+
+          <div class="valor-card" id="valor-card-transparencia">
+            <div class="valor-icon">
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3 class="valor-title">Valor Dois</h3>
+            <p class="valor-desc">Descreva outro valor da empresa e o benefício que ele traz ao cliente.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="presence-sec" id="sobre-instagram">
+      <div class="container presence-grid">
+        
+        <div class="presence-mockup" id="instagram-visual-wrapper">
+          <div class="ig-card" id="ig-preview-card">
+            
+            <div class="ig-header">
+              <div class="ig-profile">
+                <div class="ig-avatar">
+                  <img src="assets/images/logo.svg" alt="" width="80" height="80" loading="lazy" decoding="async">
+                </div>
+                <span class="ig-username">seu_perfil</span>
+              </div>
+              <span class="ig-badge"><span aria-hidden="true">&#9679;</span> Ao vivo</span>
+            </div>
+            
+            <div class="ig-content">
+              <div class="ig-graphic">
+                <div class="ig-graphic-icon">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            
+            <div class="ig-actions" aria-hidden="true">
+              <span>&#9825;</span>
+              <span>&#128172;</span>
+              <span>&#10148;</span>
+            </div>
+            
+            <div class="ig-caption-box">
+              <strong class="ig-likes">000 curtidas</strong>
+              <p class="ig-caption"><strong>seu_perfil</strong> Legenda de exemplo de uma publicação da empresa. <span class="ig-hashtag">#Hashtag #Exemplo</span></p>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="presence-text-content">
+          <span class="section-tag">Rede Social</span>
+          <h2 class="section-title text-gradient-primary" id="instagram-section-title">Acompanhe Nosso Cotidiano</h2>
+          <p class="mb-16">Mantemos um canal direto de comunicação com clientes pelo nosso <strong>Instagram</strong> oficial.</p>
+          <p class="mb-16"><strong>Feed e Stories:</strong> descreva o tipo de conteúdo publicado e a frequência.</p>
+          <p class="mb-24">Frase de fechamento convidando o visitante a seguir o perfil.</p>
+          
+          <div class="grupo-acoes">
+            <a href="https://www.instagram.com/seu_perfil" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="ig-cta-button">Seguir no Instagram<span class="sr-only"> (abre em nova aba)</span></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="presence-sec" id="sobre-google">
+      <div class="container presence-grid">
+        
+        <div class="presence-text-content">
+          <span class="section-tag">Avaliações Públicas</span>
+          <h2 class="section-title text-gradient-accent" id="google-section-title">Qualidade Comprovada</h2>
+          <p class="mb-16">A reputação da Nome da Empresa é construída sobre a satisfação e a confiança dos clientes.</p>
+          <p class="mb-16"><strong>Feedback Transparente:</strong> no Google Maps, qualquer pessoa pode conferir as avaliações sobre o atendimento da empresa.</p>
+          <p class="mb-24">Convide o visitante a deixar a própria avaliação.</p>
+          
+          <div class="grupo-acoes">
+            <a href="https://g.page/r/SEU_ID_GOOGLE/review" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="google-cta-button">Deixar Avaliação no Google<span class="sr-only"> (abre em nova aba)</span></a>
+          </div>
+        </div>
+
+        <div class="presence-mockup" id="google-visual-wrapper">
+          <div class="google-card" id="google-preview-card">
+            
+            <div class="google-biz-info">
+              <div class="google-avatar">
+                <img src="assets/images/logo.svg" alt="" width="80" height="80" loading="lazy" decoding="async">
+              </div>
+              <div class="google-biz-details">
+                <p class="google-biz-nome">Nome da Empresa</p>
+                <div class="google-rating-summary">
+                  <span class="google-rating-value">0.0</span>
+                  <span class="google-stars" aria-hidden="true">★★★★★</span>
+                  <span class="google-reviews-count">(0)</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="google-quick-actions" aria-hidden="true">
+              <div class="google-action-btn">
+                <div class="google-action-icon">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <span>Ligar</span>
+              </div>
+              <div class="google-action-btn">
+                <div class="google-action-icon">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+                  </svg>
+                </div>
+                <span>Rotas</span>
+              </div>
+              <div class="google-action-btn">
+                <div class="google-action-icon">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="18" cy="5" r="3"></circle>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="19" r="3"></circle>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                  </svg>
+                </div>
+                <span>Compartilhar</span>
+              </div>
+              <div class="google-action-btn">
+                <div class="google-action-icon">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                  </svg>
+                </div>
+                <span>Salvar</span>
+              </div>
+            </div>
+            
+            <div class="google-review-box">
+              <div class="google-review-header">
+                <div class="google-reviewer-avatar" aria-hidden="true">CE</div>
+                <div class="google-reviewer-info">
+                  <span class="google-reviewer-name">Cliente Exemplo</span>
+                  <span class="google-review-date">há uma semana</span>
+                </div>
+              </div>
+              <div class="google-review-stars" role="img" aria-label="Nota 5 de 5">★★★★★</div>
+              <p class="google-review-text">"Texto ilustrativo de uma avaliação de cliente. Substitua ou remova este mockup antes de publicar."</p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="presence-sec" id="sobre-olx">
+      <div class="container presence-grid">
+        
+        <div class="presence-mockup" id="olx-visual-wrapper">
+          <div class="olx-card" id="olx-preview-card">
+            
+            <div class="olx-header">
+              <div class="olx-avatar">
+                <img src="assets/images/logo.svg" alt="" width="80" height="80" loading="lazy" decoding="async">
+              </div>
+              <div class="olx-user-info">
+                <p class="olx-user-nome">Nome da Empresa <span class="olx-verified-badge"><span aria-hidden="true">✓</span> Verificado</span></p>
+                <p>Membro desde ANO</p>
+              </div>
+            </div>
+            
+            <div class="olx-product-showcase">
+              <div class="olx-product-graphic">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <div class="olx-product-details">
+                <span class="olx-product-title">Produto em Destaque</span>
+                <span class="olx-product-price">A partir de R$ 0,00</span>
+              </div>
+            </div>
+            
+            <div class="olx-card-footer">
+              <span class="olx-location">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                Sua Cidade, UF
+              </span>
+              <span class="olx-badge-active">Ilustrativo</span>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="presence-text-content">
+          <span class="section-tag">Vitrine Virtual</span>
+          <h2 class="section-title text-gradient-primary" id="olx-section-title">Nossa Vitrine na OLX</h2>
+          <p class="mb-16">Descreva os produtos ou serviços anunciados na página da empresa na <strong>OLX</strong>.</p>
+          <p class="mb-16"><strong>Garantia:</strong> explique as condições de qualidade, revisão ou garantia dos itens anunciados.</p>
+          <p class="mb-24">Frase de fechamento convidando o visitante a visitar a loja.</p>
+          
+          <div class="grupo-acoes">
+            <a href="https://www.olx.com.br/perfil/seu_perfil" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="olx-cta-button">Visitar Loja na OLX<span class="sr-only"> (abre em nova aba)</span></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <a href="https://wa.me/5500000000000" class="whatsapp-float" id="whatsapp-floating-action" aria-label="Entrar em contato pelo WhatsApp (abre em nova aba)" target="_blank" rel="noopener noreferrer">
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+      <path d="M12.01 2.01c-5.52 0-10 4.48-10 10 0 1.77.46 3.42 1.27 4.88L2 22l5.3-1.27c1.4.77 3 1.21 4.7 1.21 5.52 0 10-4.48 10-10 0-5.52-4.47-10-9.99-10zm5.18 14.18c-.28.77-1.4 1.4-1.96 1.4-.56 0-1.12-.28-3.36-1.21-2.8-1.21-4.62-4.06-4.76-4.25-.14-.19-1.12-1.48-1.12-2.83a2.9 2.9 0 0 1 .93-2.16c.28-.28.56-.42.84-.42.14 0 .28 0 .42.06.14.06.28.14.42.42.28.7 1.12 2.76 1.21 2.9.09.19.09.37 0 .56-.09.19-.28.37-.42.56-.14.14-.28.32-.14.56.56 1.03 1.26 1.87 2.06 2.48.8.61 1.63.93 2.29.93.37 0 .65-.19.84-.37.28-.28.84-.93.93-1.21.09-.28.28-.37.47-.28.23.09 1.49.7 1.77.84.28.14.47.28.56.42.09.14.09.7-.19 1.48z"/>
+    </svg>
+  </a>
+
+  <footer id="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand" id="footer-brand-container">
+        <a href="/" class="logo-link mb-8">
+          <img src="assets/images/logo.svg" alt="" class="logo-img" width="80" height="80" loading="lazy" decoding="async">
+          <span class="logo-text">Nome da Empresa</span>
+        </a>
+        <p class="footer-desc">Frase curta sobre a empresa e a região de atendimento: Sua Cidade e região.</p>
+      </div>
+
+      <nav class="footer-nav" id="footer-nav-container" aria-label="Rodapé">
+        <p class="footer-nav-title">Navegação</p>
+        <ul class="footer-nav-links">
+          <li><a href="/" class="footer-nav-link" id="footer-link-home">Início</a></li>
+          <li><a href="sobre.html" class="footer-nav-link" id="footer-link-sobre">Quem Somos</a></li>
+          <li><a href="servicos.html" class="footer-nav-link" id="footer-link-servicos">Catálogo de Serviços</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="copyright" id="footer-copyright">&copy; <span id="ano-copyright">2026</span> Nome da Empresa. Todos os direitos reservados.</p>
+      <div class="footer-socials" id="footer-socials-container">
+        <a href="https://www.instagram.com/seu_perfil" target="_blank" rel="noopener noreferrer" class="social-link" id="social-link-instagram" aria-label="Seguir a Nome da Empresa no Instagram (abre em nova aba)">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+          </svg>
+        </a>
+        <a href="https://www.olx.com.br/perfil/seu_perfil" target="_blank" rel="noopener noreferrer" class="social-link" id="social-link-olx" aria-label="Perfil da Nome da Empresa na OLX (abre em nova aba)">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </a>
+        <a href="https://g.page/r/SEU_ID_GOOGLE/review" target="_blank" rel="noopener noreferrer" class="social-link" id="social-link-maps" aria-label="Avaliações no Google Maps (abre em nova aba)">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/core.js" defer></script>
+  <script src="js/chatwoot.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+services:
+  site:
+    container_name: site
+    build: .
+    restart: unless-stopped
+    mem_limit: 32m
+    pids_limit: 100
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:8080/"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    networks:
+      - rede_site
+
+  cloudflared_site:
+    image: cloudflare/cloudflared:2026.9.3
+    container_name: cloudflared_site
+    profiles: ["tunel"]
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN:-}
+    pids_limit: 100
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    depends_on:
+      - site
+    networks:
+      - rede_site
+
+networks:
+  rede_site:
+    name: rede_site
